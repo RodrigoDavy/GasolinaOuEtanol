@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Gasolina ou Etanol?</string>
+    <string name="gas_price">Preço da gasolina:</string>
+    <string name="ethanol_price">Preço do etanol:</string>
+    <string name="calculate">Calcular</string>
+    <string name="which_ones_has_the_best_cost_benefit">Qual tem o melhor custo-benefício?</string>
+</resources>
