@@ -4,4 +4,7 @@
     <string name="ethanol_price">Preço do etanol:</string>
     <string name="calculate">Calcular</string>
     <string name="which_ones_has_the_best_cost_benefit">Qual tem o melhor custo-benefício?</string>
+    <string name="gas_wins">Gasolina tem o melhor custo-benefício</string>
+    <string name="ethanol_wins">Etanol tem o melhor custo-benefício</string>
+    <string name="Error_check_fields">Erro! Cheque se os valores preenchidos são válidos.</string>
 </resources>

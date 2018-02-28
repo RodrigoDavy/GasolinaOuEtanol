@@ -9,7 +9,6 @@ import android.view.View
 import android.widget.EditText
 import android.widget.TextView
 import android.view.inputmethod.InputMethodManager
-import java.lang.reflect.InvocationTargetException
 
 
 class MainActivity : AppCompatActivity() {
@@ -39,22 +38,22 @@ class MainActivity : AppCompatActivity() {
 
             when (gasOrEthanol(priceGas, priceEthanol)) {
                 GAS -> {
-                    textView.setText("Gasolina tem o melhor custo-benefício")
+                    textView.text = getString(R.string.gas_wins)
                     textView.setTextColor(ContextCompat.getColor(this,R.color.colorPrimary))
                 }
                 ETHANOL ->{
-                    textView.setText("Etanol tem o melhor custo-benefício")
+                    textView.text = getString(R.string.ethanol_wins)
                     textView.setTextColor(ContextCompat.getColor(this,R.color.colorAccent))
                 }
             }
         }catch (exception: NumberFormatException) {
-            textView.setText("Erro! Cheque se os valores preenchidos são válidos.")
+            textView.text = getString(R.string.Error_check_fields)
             textView.setTextColor(Color.RED)
         }
 
         //Hides the keyboard
-        val view = this.currentFocus
-        if (view != null) {
+        val v = this.currentFocus
+        if (v != null) {
             val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
             imm.hideSoftInputFromWindow(view.windowToken, 0)
         }
